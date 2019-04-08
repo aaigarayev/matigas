@@ -10,7 +10,7 @@ import About from "./pages/About";
 import Rent from "./pages/Rent";
 import Contacts from "./pages/Contacts";
 import Error from "./components/Error";
-import Navigation from "./components/Navigation";
+import { Navigation } from "./components/Navigation";
 
 const App = () => (
   <Router>

@@ -1,15 +1,17 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { StyledNavigationContainer } from "../styles/StyledNavigationContainer";
+import { StyledNavigationItem } from "../styles/StyledNavigationItem";
+import { StyledNavigation } from "../styles/StyledNavigation";
 
-const Navigation = () => {
+export const Navigation = () => {
   return (
-    <div>
-      <NavLink to="/">Home</NavLink>
-      <NavLink to="/about">About</NavLink>
-      <NavLink to="/rent">Rent</NavLink>
-      <NavLink to="/contacts">Contacts</NavLink>
-    </div>
+    <StyledNavigationContainer>
+      <StyledNavigation>
+        <StyledNavigationItem to="/">Главная</StyledNavigationItem>
+        <StyledNavigationItem to="/about">О нас</StyledNavigationItem>
+        <StyledNavigationItem to="/rent">Аренда авто</StyledNavigationItem>
+        <StyledNavigationItem to="/contacts">Контакты</StyledNavigationItem>
+      </StyledNavigation>
+    </StyledNavigationContainer>
   );
 };
-
-export default Navigation;
