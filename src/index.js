@@ -10,11 +10,11 @@ import About from "./pages/About";
 import Rent from "./pages/Rent";
 import Contacts from "./pages/Contacts";
 import Error from "./components/Error";
-import { Navigation } from "./components/Navigation";
+import NavigationContainer from "./containers/NavigationContainer";
 
 const App = () => (
   <Router>
-    <Navigation />
+    <NavigationContainer />
     <Switch>
       <Route exact path="/" component={Home} />
       <Route path="/about" component={About} />

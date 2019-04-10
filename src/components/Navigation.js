@@ -2,15 +2,54 @@ import React from "react";
 import { StyledNavigationContainer } from "../styles/StyledNavigationContainer";
 import { StyledNavigationItem } from "../styles/StyledNavigationItem";
 import { StyledNavigation } from "../styles/StyledNavigation";
+import { StyledNavigationLogo } from "../styles/StyledNavigationLogo";
+import {
+  StyledBurger,
+  StyledLine1,
+  StyledLine2,
+  StyledLine3
+} from "../styles/StyledBurger";
 
-export const Navigation = () => {
+// Navigation menu Functional Component
+export const Navigation = props => {
   return (
     <StyledNavigationContainer>
-      <StyledNavigation>
-        <StyledNavigationItem to="/">Главная</StyledNavigationItem>
-        <StyledNavigationItem to="/about">О нас</StyledNavigationItem>
-        <StyledNavigationItem to="/rent">Аренда авто</StyledNavigationItem>
-        <StyledNavigationItem to="/contacts">Контакты</StyledNavigationItem>
+      <StyledNavigationLogo />
+      <StyledBurger onClick={props.handleClick}>
+        <StyledLine1 />
+        <StyledLine2 />
+        <StyledLine3 />
+      </StyledBurger>
+      <StyledNavigation isActive={props.isActive}>
+        <StyledNavigationItem
+          props={props.isActive}
+          onClick={props.handleClick}
+          to="/"
+        >
+          Главная
+        </StyledNavigationItem>
+        <StyledNavigationItem
+          props={props.isActive}
+          onClick={props.handleClick}
+          to="/about"
+        >
+          О нас
+        </StyledNavigationItem>
+        <StyledNavigationItem
+          props={props.isActive}
+          onClick={props.handleClick}
+          to="/rent"
+        >
+          Аренда авто
+        </StyledNavigationItem>
+        <StyledNavigationItem
+          props={props.isActive}
+          onClick={props.handleClick}
+          primary={true}
+          to="/contacts"
+        >
+          Контакты
+        </StyledNavigationItem>
       </StyledNavigation>
     </StyledNavigationContainer>
   );
