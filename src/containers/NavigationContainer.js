@@ -3,28 +3,20 @@ import { Navigation } from "../components/Navigation";
 
 export default class NavigationContainer extends Component {
   state = {
-    isActive: false,
-    allowClicks: true
+    isActive: false
   };
 
   // Show / Hide burger menu
   handleClick = () => {
     this.setState({
-      isActive: !this.state.isActive,
-      allowClicks: false
+      isActive: !this.state.isActive
     });
-    // Prevent clicks until the animation will finish
-    setTimeout(() => {
-      this.setState({
-        allowClicks: true
-      });
-    }, 1000);
   };
 
   render() {
     return (
       <Navigation
-        handleClick={this.state.allowClicks ? this.handleClick : null}
+        handleClick={this.handleClick}
         isActive={this.state.isActive}
       />
     );

@@ -16,9 +16,9 @@ export const Navigation = props => {
     <StyledNavigationContainer>
       <StyledNavigationLogo />
       <StyledBurger onClick={props.handleClick}>
-        <StyledLine1 />
-        <StyledLine2 />
-        <StyledLine3 />
+        <StyledLine1 isActive={props.isActive} />
+        <StyledLine2 isActive={props.isActive} />
+        <StyledLine3 isActive={props.isActive} />
       </StyledBurger>
       <StyledNavigation isActive={props.isActive}>
         <StyledNavigationItem onClick={props.handleClick} to="/">
