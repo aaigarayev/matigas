@@ -1,4 +1,4 @@
-import styled, { css, keyframes } from "styled-components";
+import styled, { keyframes } from "styled-components";
 import { NavLink } from "react-router-dom";
 
 export const StyledNavigationItem = styled(NavLink)`
@@ -20,22 +20,6 @@ export const StyledNavigationItem = styled(NavLink)`
     margin: 0;
     right: 0;
     transition-delay: 0.5s;
-    opacity: ${props => (props.props ? "1" : "0")};
-    padding: ${props => (props.primary ? "9vh 20px 15vh" : "9vh 20px 9vh")};
-    animation-name: ${props => (props.props ? fadeIn : "")};
-    animation-duration: 0.5s;
-    animation-delay: 0.5s;
+    padding: ${props => (props.primary ? "8vh 20px 10vh" : "8vh 20px 8vh")};
   }
-`;
-
-const fadeIn = keyframes`
-from {
-  opacity: 0;
-  transform: translateX(100px);
-}
-
-to {
-  opacity: 1;
-  transform: translateX(0px);
-}
 `;
