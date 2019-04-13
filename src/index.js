@@ -1,6 +1,6 @@
-/**
- * Application entrypoint
- */
+// Those two dependencies needs to be imported here in order to make the app work on IE11
+import "babel-polyfill";
+import "core-js";
 
 import React from "react";
 import { render } from "react-dom";

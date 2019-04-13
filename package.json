@@ -1,12 +1,13 @@
 {
-  "name": "assignment",
+  "name": "Matigas",
   "version": "1.0.0",
-  "description": "Assignment",
+  "description": "Matigas",
   "keywords": [],
   "main": "src/index.js",
   "dependencies": {
+    "babel-polyfill": "^6.26.0",
     "react": "16.4.1",
-    "react-bootstrap": "^0.32.1",
+    "react-app-polyfill": "^0.2.0",
     "react-dom": "16.4.1",
     "react-dom-factories": "^1.0.2",
     "react-router-dom": "^5.0.0",
@@ -20,6 +21,7 @@
     "babel-preset-react": "^6.24.1",
     "bestzip": "1.1.4",
     "coffeescript": "^2.3.1",
+    "core-js": "^2.6.4",
     "parcel-bundler": "^1.6.1",
     "prop-types": "^15.6.1"
   },

@@ -1,7 +1,7 @@
-import React, { Component } from "react";
+import React from "react";
 import { Navigation } from "../components/Navigation";
 
-export default class NavigationContainer extends Component {
+export default class NavigationContainer extends React.Component {
   state = {
     isActive: false
   };
