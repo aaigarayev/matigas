@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const StyledNavigation = styled.div`
   display: inline-block;
-  width: 640px;
+  width: 700px;
   padding: 15px 0;
   z-index: 100;
   margin-right: 10px;

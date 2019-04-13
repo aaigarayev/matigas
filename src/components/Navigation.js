@@ -25,10 +25,10 @@ export const Navigation = props => {
           Главная
         </StyledNavigationItem>
         <StyledNavigationItem onClick={props.handleClick} to="/about">
-          О нас
+          Условия
         </StyledNavigationItem>
         <StyledNavigationItem onClick={props.handleClick} to="/rent">
-          Аренда авто
+          Машины на выкуп
         </StyledNavigationItem>
         <StyledNavigationItem
           onClick={props.handleClick}

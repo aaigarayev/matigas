@@ -10,9 +10,3 @@ export const StyledNavigationLogo = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
 `;
-
-// min-height: 100vh;
-// min-width: 100%;
-// background-image: url(${img});
-// background-repeat: no-repeat;
-// background-size: cover;
