@@ -1,7 +1,8 @@
 import React from "react";
+import { StyledRentPage } from "../../styles/StyledRentPage";
 
 export default class Rent extends React.Component {
   render() {
-    return <div>Аренда авто</div>;
+    return <StyledRentPage>Аренда авто</StyledRentPage>;
   }
 }
