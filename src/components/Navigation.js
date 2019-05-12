@@ -21,20 +21,16 @@ export const Navigation = props => {
         <StyledLine3 isActive={props.isActive} />
       </StyledBurger>
       <StyledNavigation isActive={props.isActive}>
-        <StyledNavigationItem onClick={props.handleClick} to="/">
+        <StyledNavigationItem onClick={props.handleClick}>
           Главная
         </StyledNavigationItem>
-        <StyledNavigationItem onClick={props.handleClick} to="/about">
+        <StyledNavigationItem onClick={props.handleClick}>
           Условия
         </StyledNavigationItem>
-        <StyledNavigationItem onClick={props.handleClick} to="/rent">
+        <StyledNavigationItem onClick={props.handleClick}>
           Машины на выкуп
         </StyledNavigationItem>
-        <StyledNavigationItem
-          onClick={props.handleClick}
-          primary={true}
-          to="/contacts"
-        >
+        <StyledNavigationItem onClick={props.handleClick} primary={true}>
           Контакты
         </StyledNavigationItem>
       </StyledNavigation>

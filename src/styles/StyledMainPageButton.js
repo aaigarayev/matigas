@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { Link } from "react-router-dom";
 
 export const StyledMainPageButton = styled.button`
   display: block;
@@ -19,7 +18,7 @@ export const StyledMainPageButton = styled.button`
   }
 `;
 
-export const StyledMainPageButtonDescr = styled(Link)`
+export const StyledMainPageButtonDescr = styled.a`
   text-decoration: none;
   color: white;
   @media screen and (max-width: 768px) {

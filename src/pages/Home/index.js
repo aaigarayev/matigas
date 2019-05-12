@@ -26,9 +26,7 @@ export default class Home extends React.Component {
             Самая маленькая комиссия в Казахстане (от 2.7%)
           </StyledMainPageSubTitle>
           <StyledMainPageButton>
-            <StyledMainPageButtonDescr to="/contacts">
-              Подключиться
-            </StyledMainPageButtonDescr>
+            <StyledMainPageButtonDescr>Подключиться</StyledMainPageButtonDescr>
           </StyledMainPageButton>
         </StyledMainPageTitleContainer>
       </StyledMainPageBG>
