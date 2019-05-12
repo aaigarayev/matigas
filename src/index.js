@@ -4,10 +4,10 @@ import "core-js";
 
 import React from "react";
 import { render } from "react-dom";
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Rent from "./pages/Rent";
-import Contacts from "./pages/Contacts";
+import { Home } from "./components/Home";
+import { About } from "./components/About";
+import { Rent } from "./components/Rent";
+import { Contacts } from "./components/Contacts";
 import NavigationContainer from "./containers/NavigationContainer";
 
 const App = () => (
