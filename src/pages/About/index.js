@@ -4,7 +4,7 @@ import { StyledAboutPageConditions } from "../../styles/StyledAboutPageCondition
 import { StyledAboutPageConditionsItem } from "../../styles/StyledAboutPageConditionsItem";
 import { StyledAboutPageConditionsIcon } from "../../styles/StyledAboutPageConditionsIcon";
 import { StyledAboutPageConditionsTitle } from "../../styles/StyledAboutPageConditionsTitle";
-import Accordion from "../../components/Accordion";
+import Accordion from "../../containers/Accordion";
 import conditions from "../../libs/conditions.json";
 
 export default class About extends React.Component {

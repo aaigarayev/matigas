@@ -1,35 +1,29 @@
 import React from "react";
-import PropTypes from "prop-types";
 import { StyledAboutPageConditionsDescription } from "../styles/StyledAboutPageConditionsDescription";
+import {
+  StyledAboutPageConditionsButtonContainer,
+  StyledAboutPageConditionsButton
+} from "../styles/StyledAboutPageConditionsButtonContainer";
 
+// Accordion for show/hide text with fading effect
 export default class Accordion extends React.Component {
   state = {
     isOpen: false
   };
 
-  handleClick = () => {
+  // Changing the state once button is clicked.
+  handleClickForHeightChange = () => {
     this.setState({
       isOpen: !this.state.isOpen
     });
-    console.log(this.refs.descr.scrollHeight);
   };
 
   render() {
-    const styles = () => {
-      if (this.state.isOpen) {
-        return {
-          maxHeight: this.refs.descr.scrollHeight + "px"
-        };
-      } else {
-        return {
-          maxHeight: "0px"
-        };
-      }
-    };
     return (
       <React.Fragment>
         <StyledAboutPageConditionsDescription
           primary={this.state.isOpen ? true : false}
+          // Using refs in order to access the maxHeight property and manipulate it using this.refs below.
           ref="descr"
           style={
             this.state.isOpen
@@ -39,7 +33,11 @@ export default class Accordion extends React.Component {
         >
           {this.props.children}
         </StyledAboutPageConditionsDescription>
-        <button onClick={this.handleClick} />
+        <StyledAboutPageConditionsButtonContainer
+          onClick={this.handleClickForHeightChange}
+        >
+          <StyledAboutPageConditionsButton isOpen={this.state.isOpen} />
+        </StyledAboutPageConditionsButtonContainer>
       </React.Fragment>
     );
   }
