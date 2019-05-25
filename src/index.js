@@ -8,6 +8,7 @@ import { Home } from "./components/Home";
 import { About } from "./components/About";
 import { Rent } from "./components/Rent";
 import { Contacts } from "./components/Contacts";
+import { StyledLine } from "./styles/StyledLine";
 import NavigationContainer from "./containers/NavigationContainer";
 
 const App = () => (
@@ -15,6 +16,7 @@ const App = () => (
     <NavigationContainer />
     <Home />
     <About />
+    <StyledLine />
     <Rent />
     <Contacts />
   </React.Fragment>
