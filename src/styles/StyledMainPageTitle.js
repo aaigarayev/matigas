@@ -9,9 +9,6 @@ export const StyledMainPageTitle = styled.h1`
   @media screen and (max-width: 768px) {
     font-size: 30px;
   }
-  @media screen and (max-width: 600px) {
-    font-size: 25px;
-  }
 `;
 
 export const StyledMainPageSubTitle = styled.h2`
@@ -22,8 +19,5 @@ export const StyledMainPageSubTitle = styled.h2`
   ${props => (!props.primary ? "margin-bottom: 25px;" : "")};
   @media screen and (max-width: 768px) {
     font-size: 25px;
-  }
-  @media screen and (max-width: 600px) {
-    font-size: 20px;
   }
 `;
