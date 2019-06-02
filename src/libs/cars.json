@@ -1,0 +1,13 @@
+[
+  {
+    "id": 0,
+    "title": "Lada Priora",
+    "conditions": "",
+    "img": "http://matigas.kz/priora.jpg"
+  },
+  {
+    "id": 1,
+    "title": "Lada Granta",
+    "img": "http://matigas.kz/granta.jpg"
+  }
+]
