@@ -6,6 +6,7 @@ export const StyledRentPageCarsContainer = styled.div`
   text-align: center;
   margin: auto;
   @media screen and (max-width: 768px) {
-    font-size: 30px;
+    width: 100%;
+    display: block;
   }
 `;
