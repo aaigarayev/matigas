@@ -3,20 +3,18 @@ import { Loader } from "../components/Loader";
 
 export default class LoaderContainer extends React.Component {
   state = {
-    isLoading: true
+    isLoaded: false
   };
 
   componentDidMount = () => {
     window.addEventListener("load", () => {
       this.setState({
-        isLoading: false
+        isLoaded: false
       });
     });
   };
 
   render() {
-    return (
-      <React.Fragment>{this.state.isLoading && <Loader />}</React.Fragment>
-    );
+    return <React.Fragment>{this.state.isLoaded && <Loader />}</React.Fragment>;
   }
 }
