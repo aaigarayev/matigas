@@ -5,6 +5,6 @@ export const StyledRentPageCarImg = styled.img`
   max-height: 450px;
   margin: auto;
   @media screen and (max-width: 970px) {
-    width: 500px;
+    width: 300px;
   }
 `;

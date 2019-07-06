@@ -20,6 +20,7 @@ const App = () => (
     <About />
     <StyledLine />
     <Rent />
+    <StyledLine />
     <Contacts />
   </React.Fragment>
 );
