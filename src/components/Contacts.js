@@ -4,6 +4,7 @@ import { StyledContactFormTitleWrapper } from "../styles/StyledContactFormTitleW
 import { StyledContactFormTitlePrimary } from "../styles/StyledContactFormTitlePrimary";
 import { StyledContactFormTitleSecondary } from "../styles/StyledContactFormTitleSecondary";
 import { StyledContactFormWrapper } from "../styles/StyledContactFormWrapper";
+import ContactForm from "../containers/ContactForm";
 
 export const Contacts = () => {
   return (
@@ -16,6 +17,7 @@ export const Contacts = () => {
           <StyledContactFormTitleSecondary>
             Просто оставьте заявку.
           </StyledContactFormTitleSecondary>
+          <ContactForm />
         </StyledContactFormTitleWrapper>
       </StyledContactFormWrapper>
     </StyledContactsPageContainer>
