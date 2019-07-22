@@ -31,3 +31,8 @@ export const StyledContactFormWrapper = styled.form`
   right: 0;
   width: 95%;
 `;
+
+export const StyledContactFormError = styled.div`
+  color: red;
+  font-size: 16px;
+`;
