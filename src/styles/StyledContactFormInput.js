@@ -15,6 +15,11 @@ export const StyledContactFormInput = styled.input`
   transition-property: transform;
   font-size: 14px;
   box-shadow: 0px 2px #000;
+  @media screen and (max-width: 780px) {
+    width: 95%;
+    box-shadow: none;
+    border-bottom: 2px solid #000;
+  }
 `;
 
 export const StyledContactFormWrapper = styled.form`
