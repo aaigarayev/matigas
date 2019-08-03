@@ -39,7 +39,7 @@ export default class ContactForm extends React.Component {
     }
 
     if (!this.state.lastName) {
-      firstNameError = "Введите фамилию";
+      lastNameError = "Введите фамилию";
     }
 
     // validating a format
@@ -47,8 +47,12 @@ export default class ContactForm extends React.Component {
       phoneError = "Введите номер по формату +7ХХХХХХХХХ";
     }
 
-    if (phoneError || firstNameError || lastNameError) {
-      this.setState({ phoneError, firstNameError, lastNameError });
+    if (this.state.year < 2000) {
+      yearError = "Автомобиль должен быть младше 19 лет.";
+    }
+
+    if (phoneError || firstNameError || lastNameError || yearError) {
+      this.setState({ phoneError, firstNameError, lastNameError, yearError });
       return false;
     }
     return true;

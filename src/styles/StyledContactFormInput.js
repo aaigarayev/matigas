@@ -24,7 +24,6 @@ export const StyledContactFormInput = styled.input`
 
 export const StyledContactFormWrapper = styled.form`
   margin: auto;
-  position: relative;
   left: 0;
   top: 0;
   bottom: 0;
