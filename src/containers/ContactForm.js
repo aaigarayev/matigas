@@ -72,20 +72,20 @@ export default class ContactForm extends React.Component {
     return (
       <StyledContactFormWrapper onSubmit={this.handleSubmit}>
         <StyledContactFormInput
-          name="firstname"
+          name="firstName"
           type="text"
           placeholder="Имя"
-          value={this.state.firstname}
+          value={this.state.firstName}
           onChange={this.handleChange}
         />
         <StyledContactFormError>
           {this.state.firstNameError}
         </StyledContactFormError>
         <StyledContactFormInput
-          name="lastname"
+          name="lastName"
           type="text"
           placeholder="Фамилия"
-          value={this.state.lastname}
+          value={this.state.lastName}
           onChange={this.handleChange}
         />
         <StyledContactFormError>
