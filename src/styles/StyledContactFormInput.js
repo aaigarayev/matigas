@@ -35,3 +35,16 @@ export const StyledContactFormError = styled.div`
   color: red;
   font-size: 16px;
 `;
+
+export const StyledContactFormButton = styled.button`
+  color: #ffffff;
+  font-size: 16px;
+  padding: 10px 20px;
+  background-color: #00838f;
+  margin-top: 20px;
+  transition: transform 0.3s;
+  border-radius: 10px;
+  &:hover {
+    transform: scale(1.15);
+  }
+`;

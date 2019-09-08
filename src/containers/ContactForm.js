@@ -2,7 +2,8 @@ import React from "react";
 import {
   StyledContactFormInput,
   StyledContactFormWrapper,
-  StyledContactFormError
+  StyledContactFormError,
+  StyledContactFormButton
 } from "../styles/StyledContactFormInput";
 
 const initialState = {
@@ -107,7 +108,7 @@ export default class ContactForm extends React.Component {
           onChange={this.handleChange}
         />
         <StyledContactFormError>{this.state.yearError}</StyledContactFormError>
-        <button type="submit">Submit</button>
+        <StyledContactFormButton type="submit">Submit</StyledContactFormButton>
       </StyledContactFormWrapper>
     );
   }
