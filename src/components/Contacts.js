@@ -6,6 +6,7 @@ import { StyledContactFormTitleSecondary } from "../styles/StyledContactFormTitl
 import { StyledContactFormWrapper } from "../styles/StyledContactFormWrapper";
 import { StyledContactsMapContainer } from "../styles/StyledContactsMapContainer";
 import { StyledContactsLocation } from "../styles/StyledContactsLocation";
+import { StyledContactsLocationTitle } from "../styles/StyledContactsLocationTitle";
 import { StyledContactsMap } from "../styles/StyledContactsMap";
 import ContactForm from "../containers/ContactForm";
 import { StyledRentPageDocsIcon } from "../styles/StyledRentPageDocsIcon";
@@ -28,6 +29,9 @@ export const Contacts = () => {
       </StyledContactsPageContainer>
       <StyledContactsMapContainer>
         <StyledContactsLocation>
+          <StyledContactsLocationTitle>
+            Наши контакты:
+          </StyledContactsLocationTitle>
           <StyledRentPageDocsIcon primary>&#9906;</StyledRentPageDocsIcon>
           проспект Сейфуллина 284, 25 кабинет
         </StyledContactsLocation>
