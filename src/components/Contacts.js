@@ -10,6 +10,8 @@ import { StyledContactsLocationTitle } from "../styles/StyledContactsLocationTit
 import { StyledContactsMap } from "../styles/StyledContactsMap";
 import ContactForm from "../containers/ContactForm";
 import { StyledRentPageDocsIcon } from "../styles/StyledRentPageDocsIcon";
+import { StyledContactsPhones } from "../styles/StyledContactsPhones";
+import phones from "../libs/phones.json";
 
 export const Contacts = () => {
   return (
@@ -33,7 +35,14 @@ export const Contacts = () => {
             Наши контакты:
           </StyledContactsLocationTitle>
           <StyledRentPageDocsIcon primary>&#9906;</StyledRentPageDocsIcon>
-          проспект Сейфуллина 284, 25 кабинет
+          проспект Сейфуллина 284, 25 кабинет <br></br>
+          {phones.map(phone => (
+            <React.Fragment>
+              <StyledRentPageDocsIcon primary>&#9990;</StyledRentPageDocsIcon>
+              <StyledContactsPhones>{phone.phone}</StyledContactsPhones>
+              <br></br>
+            </React.Fragment>
+          ))}
         </StyledContactsLocation>
         <StyledContactsMap>
           <iframe
